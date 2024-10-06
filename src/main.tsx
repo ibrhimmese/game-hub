@@ -6,11 +6,11 @@ import theme from './theme.ts'
 import './index.css'
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode}></ColorModeScript>
     <App />
     </ChakraProvider>
  
-  </StrictMode>,
+ 
 )
